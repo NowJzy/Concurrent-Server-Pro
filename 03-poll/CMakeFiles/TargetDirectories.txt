@@ -1,0 +1,4 @@
+/root/Concurrent-Server-Pro/03-poll/CMakeFiles/echosrv_poll.dir
+/root/Concurrent-Server-Pro/03-poll/CMakeFiles/echocli.dir
+/root/Concurrent-Server-Pro/03-poll/CMakeFiles/edit_cache.dir
+/root/Concurrent-Server-Pro/03-poll/CMakeFiles/rebuild_cache.dir
