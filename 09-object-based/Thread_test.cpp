@@ -1,44 +1,65 @@
 #include "Thread.h"
+#include <boost/bind.hpp>
 #include <unistd.h>
 #include <iostream>
 
 using namespace std;
 
-class ThreadTest : public Thread{
+
+class Foo{
 public:
-    ThreadTest(int count):count_(count){
-        cout << "ThreadTest..." << endl;
+    Foo(int count):count_(count){
+        
     }
 
-    ~ThreadTest(){
-        cout << "~ThreadTest..." << endl;
-    }
-
-    void Run(){
+    void MemberFunc(){
         while (count_--)
         {
             cout << "this is a test ..." << endl;
             sleep(1);
         }
-        
+    }
+
+    void MemberFunc2(int x){
+        while(count_--){
+            cout << "x = " << x << "this is a test2..." << endl;
+            sleep(1);
+        }
     }
 
     int count_;
 };
 
-int main(){
-    // ThreadTest t(5);  // 线程对象的销毁是程序结束时
-    // t.Start();
-    // t.Join();
+void ThreadFunc(){
+    cout << "ThreadFunc..." << endl;
+}
 
-    ThreadTest* t2 = new ThreadTest(5);
-    t2->SetAutoDelete(true);    // 实现线程的自动销毁
-    t2->Start();
-    t2->Join();
 
-    for(;;){
-        pause();
+void ThreadFunc2(int count){
+    while(count--){
+        cout << "ThreadFunc2..." << endl;
+        sleep(1);
     }
+}
 
+int main(){
+    Thread t1(ThreadFunc);
+    Thread t2(boost::bind(ThreadFunc2, 3));
+    Foo foo(3);
+    Thread t3(boost::bind(&Foo::MemberFunc, &foo));
+
+    Foo foo2(3);
+    Thread t4(boost::bind(&Foo::MemberFunc2, &foo2, 6));
+
+    t1.Start();
+    t2.Start();
+    t3.Start();
+    t4.Start();
+
+    t1.Join();
+    t2.Join();
+    t3.Join();
+    t4.Join();
+    
     return 0;
 }

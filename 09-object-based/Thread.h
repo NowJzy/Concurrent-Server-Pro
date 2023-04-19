@@ -2,11 +2,12 @@
 #define _THREAD_H_
 
 #include <pthread.h>
+#include <boost/function.hpp>
 
 class Thread{
 public:
-    Thread();
-    virtual ~Thread();  // 虚函数
+    typedef boost::function<void ()> ThreadFunc;
+    explicit Thread(const ThreadFunc& func);    // explicit 阻止隐式转换
 
     void Start();
     void Join();
@@ -16,7 +17,8 @@ private:
     pthread_t threadId_;
     bool autoDelete_;
     static void* ThreadRoutine(void* arg);
-    virtual void Run() = 0;
+    void Run();
+    ThreadFunc func_;
 };
 
 

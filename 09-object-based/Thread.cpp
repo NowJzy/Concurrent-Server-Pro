@@ -3,12 +3,7 @@
 
 using namespace std;
 
-Thread::Thread(){
-    cout << "Thread..." << endl;    
-}
-
-Thread::~Thread(){
-    cout << "~Thread..." << endl;
+Thread::Thread(const ThreadFunc& func):autoDelete_(false), func_(func){  
 }
 
 void Thread::Start(){
@@ -30,4 +25,8 @@ void* Thread::ThreadRoutine(void* arg){
 
 void Thread::SetAutoDelete(bool autoDelete){
     autoDelete_ = autoDelete;
+}
+
+void Thread::Run(){
+    func_();
 }

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Thread::Thread(){
+Thread::Thread():autoDelete_(false){
     cout << "Thread..." << endl;    
 }
 
