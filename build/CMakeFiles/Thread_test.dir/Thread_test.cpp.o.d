@@ -1,7 +1,7 @@
 CMakeFiles/Thread_test.dir/Thread_test.cpp.o: \
- /root/Concurrent-Server-Pro/08-object-oriented/Thread_test.cpp \
+ /root/Concurrent-Server-Pro/09-object-based/Thread_test.cpp \
  /usr/include/stdc-predef.h \
- /root/Concurrent-Server-Pro/08-object-oriented/Thread.h \
+ /root/Concurrent-Server-Pro/09-object-based/Thread.h \
  /usr/include/pthread.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/Concurrent-Server-Pro/08-object-oriented
+CMAKE_SOURCE_DIR = /root/Concurrent-Server-Pro/09-object-based
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/Concurrent-Server-Pro/build
@@ -129,6 +129,19 @@ Thread_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Thread_test.dir/build.make CMakeFiles/Thread_test.dir/build
 .PHONY : Thread_test/fast
 
+#=============================================================================
+# Target rules for targets named bf_test
+
+# Build rule for target.
+bf_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bf_test
+.PHONY : bf_test
+
+# fast build rule for target.
+bf_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bf_test.dir/build.make CMakeFiles/bf_test.dir/build
+.PHONY : bf_test/fast
+
 Thread.o: Thread.cpp.o
 .PHONY : Thread.o
 
@@ -177,6 +190,30 @@ Thread_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Thread_test.dir/build.make CMakeFiles/Thread_test.dir/Thread_test.cpp.s
 .PHONY : Thread_test.cpp.s
 
+bf_test.o: bf_test.cpp.o
+.PHONY : bf_test.o
+
+# target to build an object file
+bf_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bf_test.dir/build.make CMakeFiles/bf_test.dir/bf_test.cpp.o
+.PHONY : bf_test.cpp.o
+
+bf_test.i: bf_test.cpp.i
+.PHONY : bf_test.i
+
+# target to preprocess a source file
+bf_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bf_test.dir/build.make CMakeFiles/bf_test.dir/bf_test.cpp.i
+.PHONY : bf_test.cpp.i
+
+bf_test.s: bf_test.cpp.s
+.PHONY : bf_test.s
+
+# target to generate assembly for a file
+bf_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bf_test.dir/build.make CMakeFiles/bf_test.dir/bf_test.cpp.s
+.PHONY : bf_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +223,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Thread_test"
+	@echo "... bf_test"
 	@echo "... Thread.o"
 	@echo "... Thread.i"
 	@echo "... Thread.s"
 	@echo "... Thread_test.o"
 	@echo "... Thread_test.i"
 	@echo "... Thread_test.s"
+	@echo "... bf_test.o"
+	@echo "... bf_test.i"
+	@echo "... bf_test.s"
 .PHONY : help
 
 

@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/Concurrent-Server-Pro/08-object-oriented
+CMAKE_SOURCE_DIR = /root/Concurrent-Server-Pro/09-object-based
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /root/Concurrent-Server-Pro/build
@@ -70,32 +70,32 @@ include CMakeFiles/Thread_test.dir/progress.make
 include CMakeFiles/Thread_test.dir/flags.make
 
 CMakeFiles/Thread_test.dir/Thread_test.cpp.o: CMakeFiles/Thread_test.dir/flags.make
-CMakeFiles/Thread_test.dir/Thread_test.cpp.o: /root/Concurrent-Server-Pro/08-object-oriented/Thread_test.cpp
+CMakeFiles/Thread_test.dir/Thread_test.cpp.o: /root/Concurrent-Server-Pro/09-object-based/Thread_test.cpp
 CMakeFiles/Thread_test.dir/Thread_test.cpp.o: CMakeFiles/Thread_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Concurrent-Server-Pro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Thread_test.dir/Thread_test.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Thread_test.dir/Thread_test.cpp.o -MF CMakeFiles/Thread_test.dir/Thread_test.cpp.o.d -o CMakeFiles/Thread_test.dir/Thread_test.cpp.o -c /root/Concurrent-Server-Pro/08-object-oriented/Thread_test.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Thread_test.dir/Thread_test.cpp.o -MF CMakeFiles/Thread_test.dir/Thread_test.cpp.o.d -o CMakeFiles/Thread_test.dir/Thread_test.cpp.o -c /root/Concurrent-Server-Pro/09-object-based/Thread_test.cpp
 
 CMakeFiles/Thread_test.dir/Thread_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Thread_test.dir/Thread_test.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Concurrent-Server-Pro/08-object-oriented/Thread_test.cpp > CMakeFiles/Thread_test.dir/Thread_test.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Concurrent-Server-Pro/09-object-based/Thread_test.cpp > CMakeFiles/Thread_test.dir/Thread_test.cpp.i
 
 CMakeFiles/Thread_test.dir/Thread_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Thread_test.dir/Thread_test.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Concurrent-Server-Pro/08-object-oriented/Thread_test.cpp -o CMakeFiles/Thread_test.dir/Thread_test.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Concurrent-Server-Pro/09-object-based/Thread_test.cpp -o CMakeFiles/Thread_test.dir/Thread_test.cpp.s
 
 CMakeFiles/Thread_test.dir/Thread.cpp.o: CMakeFiles/Thread_test.dir/flags.make
-CMakeFiles/Thread_test.dir/Thread.cpp.o: /root/Concurrent-Server-Pro/08-object-oriented/Thread.cpp
+CMakeFiles/Thread_test.dir/Thread.cpp.o: /root/Concurrent-Server-Pro/09-object-based/Thread.cpp
 CMakeFiles/Thread_test.dir/Thread.cpp.o: CMakeFiles/Thread_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Concurrent-Server-Pro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Thread_test.dir/Thread.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Thread_test.dir/Thread.cpp.o -MF CMakeFiles/Thread_test.dir/Thread.cpp.o.d -o CMakeFiles/Thread_test.dir/Thread.cpp.o -c /root/Concurrent-Server-Pro/08-object-oriented/Thread.cpp
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Thread_test.dir/Thread.cpp.o -MF CMakeFiles/Thread_test.dir/Thread.cpp.o.d -o CMakeFiles/Thread_test.dir/Thread.cpp.o -c /root/Concurrent-Server-Pro/09-object-based/Thread.cpp
 
 CMakeFiles/Thread_test.dir/Thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Thread_test.dir/Thread.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Concurrent-Server-Pro/08-object-oriented/Thread.cpp > CMakeFiles/Thread_test.dir/Thread.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Concurrent-Server-Pro/09-object-based/Thread.cpp > CMakeFiles/Thread_test.dir/Thread.cpp.i
 
 CMakeFiles/Thread_test.dir/Thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Thread_test.dir/Thread.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Concurrent-Server-Pro/08-object-oriented/Thread.cpp -o CMakeFiles/Thread_test.dir/Thread.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Concurrent-Server-Pro/09-object-based/Thread.cpp -o CMakeFiles/Thread_test.dir/Thread.cpp.s
 
 # Object files for target Thread_test
 Thread_test_OBJECTS = \
@@ -121,6 +121,6 @@ CMakeFiles/Thread_test.dir/clean:
 .PHONY : CMakeFiles/Thread_test.dir/clean
 
 CMakeFiles/Thread_test.dir/depend:
-	cd /root/Concurrent-Server-Pro/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/Concurrent-Server-Pro/08-object-oriented /root/Concurrent-Server-Pro/08-object-oriented /root/Concurrent-Server-Pro/build /root/Concurrent-Server-Pro/build /root/Concurrent-Server-Pro/build/CMakeFiles/Thread_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/Concurrent-Server-Pro/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/Concurrent-Server-Pro/09-object-based /root/Concurrent-Server-Pro/09-object-based /root/Concurrent-Server-Pro/build /root/Concurrent-Server-Pro/build /root/Concurrent-Server-Pro/build/CMakeFiles/Thread_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Thread_test.dir/depend
 

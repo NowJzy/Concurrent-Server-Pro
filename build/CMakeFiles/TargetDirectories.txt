@@ -1,3 +1,4 @@
 /root/Concurrent-Server-Pro/build/CMakeFiles/Thread_test.dir
+/root/Concurrent-Server-Pro/build/CMakeFiles/bf_test.dir
 /root/Concurrent-Server-Pro/build/CMakeFiles/edit_cache.dir
 /root/Concurrent-Server-Pro/build/CMakeFiles/rebuild_cache.dir

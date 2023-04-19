@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/Concurrent-Server-Pro/09-object-based/Thread.cpp" "CMakeFiles/Thread_test.dir/Thread.cpp.o" "gcc" "CMakeFiles/Thread_test.dir/Thread.cpp.o.d"
-  "/root/Concurrent-Server-Pro/09-object-based/Thread_test.cpp" "CMakeFiles/Thread_test.dir/Thread_test.cpp.o" "gcc" "CMakeFiles/Thread_test.dir/Thread_test.cpp.o.d"
+  "/root/Concurrent-Server-Pro/09-object-based/bf_test.cpp" "CMakeFiles/bf_test.dir/bf_test.cpp.o" "gcc" "CMakeFiles/bf_test.dir/bf_test.cpp.o.d"
   )
 
 # Targets to which this target links.

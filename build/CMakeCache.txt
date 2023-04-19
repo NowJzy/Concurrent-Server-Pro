@@ -190,7 +190,7 @@ pas_BINARY_DIR:STATIC=/root/Concurrent-Server-Pro/build
 pas_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-pas_SOURCE_DIR:STATIC=/root/Concurrent-Server-Pro/08-object-oriented
+pas_SOURCE_DIR:STATIC=/root/Concurrent-Server-Pro/09-object-based
 
 
 ########################
@@ -261,7 +261,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/root/Concurrent-Server-Pro/08-object-oriented
+CMAKE_HOME_DIRECTORY:INTERNAL=/root/Concurrent-Server-Pro/09-object-based
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

@@ -1,4 +1,4 @@
-# Install script for directory: /root/Concurrent-Server-Pro/08-object-oriented
+# Install script for directory: /root/Concurrent-Server-Pro/09-object-based
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
