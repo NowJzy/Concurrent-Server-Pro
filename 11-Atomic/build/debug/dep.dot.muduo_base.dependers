@@ -1,0 +1,8 @@
+digraph "muduo_base" {
+node [
+  fontsize = "12"
+];
+    "node2" [ label = "muduo_base", shape = octagon ];
+    "node5" [ label = "timestamp_unittest", shape = egg ];
+    "node5" -> "node2" [ style = dotted ] // timestamp_unittest -> muduo_base
+}
