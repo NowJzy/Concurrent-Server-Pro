@@ -1,0 +1,10 @@
+digraph "muduo_base" {
+node [
+  fontsize = "12"
+];
+    "node6" [ label = "muduo_base", shape = octagon ];
+    "node3" [ label = "pthread", shape = septagon ];
+    "node6" -> "node3"  // muduo_base -> pthread
+    "node7" [ label = "rt", shape = septagon ];
+    "node6" -> "node7"  // muduo_base -> rt
+}

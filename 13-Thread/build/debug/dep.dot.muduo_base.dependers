@@ -1,0 +1,12 @@
+digraph "muduo_base" {
+node [
+  fontsize = "12"
+];
+    "node6" [ label = "muduo_base", shape = octagon ];
+    "node5" [ label = "exception_test", shape = egg ];
+    "node5" -> "node6" [ style = dotted ] // exception_test -> muduo_base
+    "node9" [ label = "thread_test", shape = egg ];
+    "node9" -> "node6" [ style = dotted ] // thread_test -> muduo_base
+    "node10" [ label = "timestamp_unittest", shape = egg ];
+    "node10" -> "node6" [ style = dotted ] // timestamp_unittest -> muduo_base
+}
