@@ -29,8 +29,7 @@ void parent(void)
 }
 
 int main(void)
-{	
-	// 不会出现死锁
+{
 	pthread_atfork(prepare, parent, NULL);
 	printf("pid = %d Entering main ...\n", static_cast<int>(getpid()));
 	pthread_t tid;

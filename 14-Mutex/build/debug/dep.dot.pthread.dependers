@@ -1,0 +1,26 @@
+digraph "pthread" {
+node [
+  fontsize = "12"
+];
+    "node4" [ label = "pthread", shape = septagon ];
+    "node3" [ label = "muduo_base", shape = octagon ];
+    "node3" -> "node4"  // muduo_base -> pthread
+    "node2" [ label = "countdownlatch_test1", shape = egg ];
+    "node2" -> "node3" [ style = dotted ] // countdownlatch_test1 -> muduo_base
+    "node6" [ label = "countdownlatch_test2", shape = egg ];
+    "node6" -> "node3" [ style = dotted ] // countdownlatch_test2 -> muduo_base
+    "node9" [ label = "exception_test", shape = egg ];
+    "node9" -> "node3" [ style = dotted ] // exception_test -> muduo_base
+    "node10" [ label = "mutex_test", shape = egg ];
+    "node10" -> "node3" [ style = dotted ] // mutex_test -> muduo_base
+    "node12" [ label = "thread_test", shape = egg ];
+    "node12" -> "node3" [ style = dotted ] // thread_test -> muduo_base
+    "node13" [ label = "timestamp_unittest", shape = egg ];
+    "node13" -> "node3" [ style = dotted ] // timestamp_unittest -> muduo_base
+    "node7" [ label = "deadlock_test", shape = egg ];
+    "node7" -> "node4" [ style = dotted ] // deadlock_test -> pthread
+    "node8" [ label = "deadlock_test2", shape = egg ];
+    "node8" -> "node4" [ style = dotted ] // deadlock_test2 -> pthread
+    "node11" [ label = "pthread_atfork_test", shape = egg ];
+    "node11" -> "node4" [ style = dotted ] // pthread_atfork_test -> pthread
+}
