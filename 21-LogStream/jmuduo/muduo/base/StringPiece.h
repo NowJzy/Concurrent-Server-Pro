@@ -120,6 +120,7 @@ class StringPiece {
     return !(*this == x);
   }
 
+// 巧妙的比较运算***
 #define STRINGPIECE_BINARY_PREDICATE(cmp,auxcmp)                             \
   bool operator cmp (const StringPiece& x) const {                           \
     int r = memcmp(ptr_, x.ptr_, length_ < x.length_ ? length_ : x.length_); \
