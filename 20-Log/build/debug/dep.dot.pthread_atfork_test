@@ -1,0 +1,8 @@
+digraph "pthread_atfork_test" {
+node [
+  fontsize = "12"
+];
+    "node16" [ label = "pthread_atfork_test", shape = egg ];
+    "node3" [ label = "pthread", shape = septagon ];
+    "node16" -> "node3" [ style = dotted ] // pthread_atfork_test -> pthread
+}
