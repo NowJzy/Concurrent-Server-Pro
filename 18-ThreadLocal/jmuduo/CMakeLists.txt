@@ -11,9 +11,9 @@ set(CXX_FLAGS
  # -DVALGRIND
  # -DMUDUO_STD_STRING
  -D_FILE_OFFSET_BITS=64
-#  -Wall
+ -Wall
  -Wextra
- -Werror
+#  -Werror
  -Wconversion
  -Wno-unused-parameter
  -Wold-style-cast
