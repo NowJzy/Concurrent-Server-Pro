@@ -1,0 +1,12 @@
+digraph "countdownlatch_test1" {
+node [
+  fontsize = "12"
+];
+    "node8" [ label = "countdownlatch_test1", shape = egg ];
+    "node2" [ label = "muduo_base", shape = octagon ];
+    "node8" -> "node2" [ style = dotted ] // countdownlatch_test1 -> muduo_base
+    "node3" [ label = "pthread", shape = septagon ];
+    "node2" -> "node3"  // muduo_base -> pthread
+    "node4" [ label = "rt", shape = septagon ];
+    "node2" -> "node4"  // muduo_base -> rt
+}

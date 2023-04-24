@@ -12,6 +12,8 @@
 using namespace muduo;
 using namespace muduo::detail;
 
+// ∫ˆ¬‘-Wtype-limits
+// πÿ”⁄diagnostic∏¸∂‡–≈œ¢£¨ø…“‘≤Èø¥http://gcc.gnu.org/onlinedocs/gcc/Diagnostic-Pragmas.html
 #pragma GCC diagnostic ignored "-Wtype-limits"
 //#pragma GCC diagnostic error "-Wtype-limits"
 namespace muduo
@@ -50,6 +52,7 @@ size_t convert(char buf[], T value)
   return p - buf;
 }
 
+// uintptr_t∂‘”⁄32∆ΩÃ®¿¥ÀµæÕ «unsigned int, ∂‘”⁄64Œª∆ΩÃ®¿¥Àµunsigned long int
 size_t convertHex(char buf[], uintptr_t value)
 {
   uintptr_t i = value;
@@ -79,7 +82,7 @@ const char* FixedBuffer<SIZE>::debugString()
 }
 
 template<int SIZE>
-void FixedBuffer<SIZE>::caookieStart()
+void FixedBuffer<SIZE>::cookieStart()
 {
 }
 
@@ -159,9 +162,6 @@ LogStream& LogStream::operator<<(unsigned long long v)
 
 LogStream& LogStream::operator<<(const void* p)
 {
-  /* uintptr_t ÂØπ‰∫é 32 Âπ≥Âè∞Êù•ËØ¥Â∞±ÊòØ unsigned intÔºå
-     ÂØπ‰∫é 64 ‰ΩçÂπ≥Âè∞Êù•ËØ¥Â∞±ÊòØ unsigned long int
-  */
   uintptr_t v = reinterpret_cast<uintptr_t>(p);
   if (buffer_.avail() >= kMaxNumericSize)
   {
@@ -188,6 +188,7 @@ LogStream& LogStream::operator<<(double v)
 template<typename T>
 Fmt::Fmt(const char* fmt, T val)
 {
+  // ∂œ—‘T «À„ ı¿‡–Õ
   BOOST_STATIC_ASSERT(boost::is_arithmetic<T>::value == true);
 
   length_ = snprintf(buf_, sizeof buf_, fmt, val);

@@ -1,0 +1,44 @@
+digraph "rt" {
+node [
+  fontsize = "12"
+];
+    "node4" [ label = "rt", shape = septagon ];
+    "node2" [ label = "muduo_base", shape = octagon ];
+    "node2" -> "node4"  // muduo_base -> rt
+    "node1" [ label = "blockingqueue_bench", shape = egg ];
+    "node1" -> "node2" [ style = dotted ] // blockingqueue_bench -> muduo_base
+    "node5" [ label = "blockingqueue_test", shape = egg ];
+    "node5" -> "node2" [ style = dotted ] // blockingqueue_test -> muduo_base
+    "node6" [ label = "boundedblockingqueue_test", shape = egg ];
+    "node6" -> "node2" [ style = dotted ] // boundedblockingqueue_test -> muduo_base
+    "node8" [ label = "countdownlatch_test1", shape = egg ];
+    "node8" -> "node2" [ style = dotted ] // countdownlatch_test1 -> muduo_base
+    "node9" [ label = "countdownlatch_test2", shape = egg ];
+    "node9" -> "node2" [ style = dotted ] // countdownlatch_test2 -> muduo_base
+    "node12" [ label = "exception_test", shape = egg ];
+    "node12" -> "node2" [ style = dotted ] // exception_test -> muduo_base
+    "node13" [ label = "log_test1", shape = egg ];
+    "node13" -> "node2" [ style = dotted ] // log_test1 -> muduo_base
+    "node14" [ label = "log_test2", shape = egg ];
+    "node14" -> "node2" [ style = dotted ] // log_test2 -> muduo_base
+    "node15" [ label = "logstream_bench", shape = egg ];
+    "node15" -> "node2" [ style = dotted ] // logstream_bench -> muduo_base
+    "node16" [ label = "logstream_test", shape = egg ];
+    "node16" -> "node2" [ style = dotted ] // logstream_test -> muduo_base
+    "node18" [ label = "mutex_test", shape = egg ];
+    "node18" -> "node2" [ style = dotted ] // mutex_test -> muduo_base
+    "node20" [ label = "singleton_test", shape = egg ];
+    "node20" -> "node2" [ style = dotted ] // singleton_test -> muduo_base
+    "node21" [ label = "singletonthreadlocal_test", shape = egg ];
+    "node21" -> "node2" [ style = dotted ] // singletonthreadlocal_test -> muduo_base
+    "node22" [ label = "thread_test", shape = egg ];
+    "node22" -> "node2" [ style = dotted ] // thread_test -> muduo_base
+    "node23" [ label = "threadlocal_test", shape = egg ];
+    "node23" -> "node2" [ style = dotted ] // threadlocal_test -> muduo_base
+    "node24" [ label = "threadlocalsingleton_test", shape = egg ];
+    "node24" -> "node2" [ style = dotted ] // threadlocalsingleton_test -> muduo_base
+    "node25" [ label = "threadpool_test", shape = egg ];
+    "node25" -> "node2" [ style = dotted ] // threadpool_test -> muduo_base
+    "node26" [ label = "timestamp_unittest", shape = egg ];
+    "node26" -> "node2" [ style = dotted ] // timestamp_unittest -> muduo_base
+}

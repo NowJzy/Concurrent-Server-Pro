@@ -1,0 +1,8 @@
+digraph "boost_unit_test_framework" {
+node [
+  fontsize = "12"
+];
+    "node17" [ label = "boost_unit_test_framework", shape = septagon ];
+    "node16" [ label = "logstream_test", shape = egg ];
+    "node16" -> "node17" [ style = dotted ] // logstream_test -> boost_unit_test_framework
+}

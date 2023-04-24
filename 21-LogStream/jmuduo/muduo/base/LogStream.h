@@ -19,7 +19,7 @@ namespace detail
 const int kSmallBuffer = 4000;
 const int kLargeBuffer = 4000*1000;
 
-// SIZE éç±»å‹å‚æ•°
+// SIZEÎª·ÇÀàĞÍ²ÎÊı
 template<int SIZE>
 class FixedBuffer : boost::noncopyable
 {
@@ -54,8 +54,6 @@ class FixedBuffer : boost::noncopyable
   void add(size_t len) { cur_ += len; }
 
   void reset() { cur_ = data_; }
-
-  // ç›¸å½“äº memset(buf, 0, sizeof(buf))
   void bzero() { ::bzero(data_, sizeof data_); }
 
   // for used by GDB
@@ -70,7 +68,7 @@ class FixedBuffer : boost::noncopyable
   static void cookieStart();
   static void cookieEnd();
 
-  void (*cookie_)();  // å‡½æ•°æŒ‡é’ˆ
+  void (*cookie_)();
   char data_[SIZE];
   char* cur_;
 };
