@@ -1,0 +1,12 @@
+digraph "logstream_bench" {
+node [
+  fontsize = "12"
+];
+    "node18" [ label = "logstream_bench", shape = egg ];
+    "node2" [ label = "muduo_base", shape = octagon ];
+    "node18" -> "node2" [ style = dotted ] // logstream_bench -> muduo_base
+    "node3" [ label = "pthread", shape = septagon ];
+    "node2" -> "node3"  // muduo_base -> pthread
+    "node4" [ label = "rt", shape = septagon ];
+    "node2" -> "node4"  // muduo_base -> rt
+}
