@@ -1,8 +1,0 @@
-digraph "deadlock_test2" {
-node [
-  fontsize = "12"
-];
-    "node11" [ label = "deadlock_test2", shape = egg ];
-    "node3" [ label = "pthread", shape = septagon ];
-    "node11" -> "node3" [ style = dotted ] // deadlock_test2 -> pthread
-}
